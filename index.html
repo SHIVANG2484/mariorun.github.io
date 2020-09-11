@@ -1,0 +1,58 @@
+<DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.mainMariobg{
+			width: 100%;
+			height: 100vh;
+			background-image: url('814007_super-mario-backgrounds_1920x1200_h.webp');
+			background-size: 100% 100%;
+		}
+		.mario img{
+             position: absolute;
+             bottom: 55px;
+             animation-name: mariorun;
+             animation-duration: 10s;
+             animation-iteration-count: infinite;
+             animation-timing-function: linear;
+
+		}
+		@keyframes mariorun{
+			0%{left: 0;}
+			100%{left: 88%;}
+		}
+
+		h2{
+			color: white;
+			text-transform: uppercase;
+			font-size: 2em;
+			letter-spacing: 2px;
+			position: absolute;
+			top: 20%
+			Left: 40%;
+			animation: mariotext 4s linear;
+			animation-iteration-count: infinite;
+			animation-delay: 1s
+		}
+		@keyframes mariotext{
+			0%{font-size: 2em; left: 40%;}
+			100%{font-size: 4em; left: 40%;}
+		}
+	</style>
+</head>
+<body>
+
+<div class="mainMariobg">
+	<div class="mario">
+    <img src="14 - 1.gif" width="150px">
+    <h2>MARIO RUN</h2>
+	</div>
+	
+
+</body>
+</html>
